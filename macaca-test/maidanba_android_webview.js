@@ -89,26 +89,48 @@ describe('macaca mobile sample', function() {
   // });
 
 
-  it('#1 should login 商旅出行', function() {
-
+  it('#1 点击生活按钮', function() {
     return driver
       .sleep(2000)
       .waitForElementByName('生活')
       .click()
-      .sleep(3000)
+      .sleep(3000);
+  });
+
+
+  it('#2 点击商旅出行', function() {
+    return driver
       .elementByName('商旅出行')
       .click()
-      .sleep(3000)
+      .sleep(3000);
+  });
+
+
+  it('#3 点击换旅程', function() {
+    return driver
       .webview()
       .elementByXPath(
         '//*[@id="layout"]/div[2]/div[3]/ul/li[1]/a')
       .click()
-      .sleep(3000)
-      // .customback()
-      // .sleep(1000)
-      // .elementByName('商旅出行')
-      // .click()
-    ;
+      .sleep(3000);
   });
 
+
+
+  // it('#1 should login 商旅出行', function() {
+  //
+  //   return driver
+  //     .sleep(2000)
+  //     .waitForElementByName('生活')
+  //     .click()
+  //     .sleep(3000)
+  //     .elementByName('商旅出行')
+  //     .click()
+  //     .sleep(3000)
+  //     .webview()
+  //     .elementByXPath(
+  //       '//*[@id="layout"]/div[2]/div[3]/ul/li[1]/a')
+  //     .click()
+  //     .sleep(3000);
+  // });
 });

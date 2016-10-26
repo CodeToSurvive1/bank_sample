@@ -18,13 +18,13 @@ describe('macaca desktop sample', function() {
       .setWindowSize(1280, 800);
   });
 
-  it('#0 should go into macaca', function() {
+  it('#0 打开浏览器', function() {
     return driver
       .get(initialURL)
       .sleep(3000);
   });
 
-  it('#1 should works with macaca', function() {
+  it('#1 查询macaca', function() {
     return driver
       .elementById('kw')
       .sendKeys('macaca')
@@ -41,21 +41,23 @@ describe('macaca desktop sample', function() {
         hasHeadWrapper.should.be.true();
       })
       .elementByXPathOrNull('//*[@id="kw"]')
-      .sendKeys(' elementByXPath')
+      .sendKeys('elementByXPath')
       .sleep(3000)
       .elementById('su')
       .click()
       .sleep(5000)
-      .saveScreenshot('pic1');
+      .saveScreenshot(
+        '/Users/mac/software/github/macaca/bank_sample/pictures/pic1.png'
+      );
   });
 
-  it('#2 should go into web', function() {
+  it('#2 进入web页面', function() {
     return driver
       .get(initialURL)
       .sleep(3000);
   });
 
-  it('#3 should works with web', function() {
+  it('#3 成功打开', function() {
     return driver
       .elementById('kw')
       .sendKeys('TesterHome')
@@ -67,7 +69,8 @@ describe('macaca desktop sample', function() {
       .then(function(html) {
         html.should.containEql('TesterHome');
       })
-      .saveScreenshot('pic2');
+      .saveScreenshot(
+        '/Users/mac/software/github/macaca/bank_sample/pictures/pic2');
   });
 
   after((done) => {
