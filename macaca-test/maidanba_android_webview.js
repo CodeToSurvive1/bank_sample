@@ -89,7 +89,7 @@ describe('macaca mobile sample', function() {
   // });
 
 
-it('#1 should login 商旅出行', function() {
+  it('#1 should login 商旅出行', function() {
 
     return driver
       .sleep(2000)
@@ -104,11 +104,11 @@ it('#1 should login 商旅出行', function() {
         '//*[@id="layout"]/div[2]/div[3]/ul/li[1]/a')
       .click()
       .sleep(3000)
-      .customback()
-      .sleep(1000)
-      .elementByName('商旅出行')
-      .click()
-      ;
+      // .customback()
+      // .sleep(1000)
+      // .elementByName('商旅出行')
+      // .click()
+    ;
   });
 
 });
