@@ -46,9 +46,7 @@ describe('macaca desktop sample', function() {
       .elementById('su')
       .click()
       .sleep(5000)
-      .saveScreenshot(
-        '/Users/mac/software/github/macaca/bank_sample/pictures/pic1.png'
-      );
+      .takeScreenshot();
   });
 
   it('#2 进入web页面', function() {
@@ -69,8 +67,7 @@ describe('macaca desktop sample', function() {
       .then(function(html) {
         html.should.containEql('TesterHome');
       })
-      .saveScreenshot(
-        '/Users/mac/software/github/macaca/bank_sample/pictures/pic2');
+      .takeScreenshot();
   });
 
   after((done) => {
