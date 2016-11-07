@@ -27,8 +27,8 @@ var androidOpts = {
   platformName: 'Android',
   package: 'com.bankcomm.maidanba',
   reuse: 2,
-//   udid: '2353c4bb',
-  udid: 'PBV0216706008526',
+  udid: '2353c4bb',
+//   udid: 'PBV0216706008526',
   
   activity: '.activity.SplashActivity',
   // activity: 'com.bankcomm.maidanba/.activity.SplashActivity',
