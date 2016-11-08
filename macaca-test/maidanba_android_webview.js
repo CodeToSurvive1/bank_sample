@@ -90,31 +90,102 @@ describe('macaca mobile sample', function() {
   // });
 
 
-  it('#1 点击生活按钮', function() {
+  it('#1 点击金融按钮', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('金融')
+      .click()
+      .sleep(3000);
+  });
+
+  it('#2 点击生活按钮', function() {
     return driver
       .sleep(2000)
       .waitForElementByName('生活')
       .click()
       .sleep(3000);
   });
-
-
-  it('#2 点击商旅出行', function() {
+  
+  it('#3 点击我的按钮', function() {
     return driver
-      .elementByName('商旅出行')
+      .sleep(2000)
+      .waitForElementByName('我的')
       .click()
       .sleep(3000);
   });
 
-
-  it('#3 点击换旅程', function() {
+  it('#4 点击首页按钮', function() {
     return driver
-      .webview()
-      .elementByXPath(
-        '//*[@id="layout"]/div[2]/div[3]/ul/li[1]/a')
+      .sleep(2000)
+      .waitForElementByName('首页')
       .click()
       .sleep(3000);
   });
+
+  it('#5 点击金融按钮', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('金融')
+      .click()
+      .sleep(3000);
+  });
+
+  it('#6 点击生活按钮', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('生活')
+      .click()
+      .sleep(3000);
+  });
+  
+  it('#7 点击我的按钮', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('我的')
+      .click()
+      .sleep(3000);
+  });
+
+  it('#8 点击首页按钮', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('首页')
+      .click()
+      .sleep(3000);
+  });
+  
+  it('#9 点击金融按钮', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('金融')
+      .click()
+      .sleep(3000);
+  });
+
+  it('#10 点击生活按钮', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('生活')
+      .click()
+      .sleep(3000);
+  });
+  
+  it('#11 点击我的按钮', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('我的')
+      .click()
+      .sleep(3000);
+  });
+
+  it('#12 点击首页按钮', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('首页')
+      .click()
+      .sleep(3000);
+  });
+  
 
 
 
