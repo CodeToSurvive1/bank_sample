@@ -68,18 +68,17 @@ describe('macaca mobile sample', function() {
         .sleep(2000)
         .elementByName('通讯录')
         .click()
-        .sleep(3000)
+        .sleep(2000)
         // touch@2x.png
         .elementByName('公众号')
         .click()
-        .sleep(3000)
+        .sleep(2000)
         .elementByName('安卓开发精选')
         .click()
-        .sleep(5000)
+        .sleep(2000)
         .elementByName('公号推荐')
         .click()
-        .sleep(5000)
-        .sleep(3000);
+        .sleep(2000);
   });
 
 
