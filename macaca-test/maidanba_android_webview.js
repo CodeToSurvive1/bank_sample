@@ -27,7 +27,7 @@ var androidOpts = {
   platformName: 'Android',
   package: 'com.bankcomm.maidanba',
   reuse: 2,
-  udid: 'DU2MYN146D002912',
+  udid:  process.env.udid || 'DU2MYN146D002912',
   activity: '.activity.SplashActivity',
   // activity: 'com.bankcomm.maidanba/.activity.SplashActivity',
   // app: path.join(__dirname, '..', 'app', `${platform}-app-bootstrap.zip`)
