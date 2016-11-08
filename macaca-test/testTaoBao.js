@@ -27,7 +27,7 @@ var androidOpts = {
   platformName: 'Android',
   package: 'com.taobao.taobao',
   reuse: 2,
-  udid: 'PBV0216706008526',
+  udid:  process.env.udid || 'PBV0216706008526',
   activity: 'com.taobao.tao.welcome.Welcome',
   // activity: 'com.bankcomm.maidanba/.activity.SplashActivity',
   // app: path.join(__dirname, '..', 'app', `taobao.apk`)
