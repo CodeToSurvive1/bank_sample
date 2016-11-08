@@ -98,30 +98,6 @@ describe('macaca mobile sample', function() {
       .sleep(3000);
   });
 
-  it('#2 问大家', function() {
-    return driver
-      .sleep(2000)
-      .waitForElementByName('问大家')
-      .click()
-      .sleep(3000);
-  });
-
-  it('#3 购物车', function() {
-    return driver
-      .sleep(2000)
-      .waitForElementByName('购物车')
-      .click()
-      .sleep(3000);
-  });
-
-  it('#4 我的淘宝', function() {
-    return driver
-      .sleep(2000)
-      .waitForElementByName('我的淘宝')
-      .click()
-      .sleep(3000);
-  });
-
   it('#5 首页', function() {
     return driver
       .sleep(2000)
@@ -138,26 +114,20 @@ describe('macaca mobile sample', function() {
       .sleep(3000);
   });
 
-  it('#7 问大家', function() {
+  
+
+  it('#10 首页', function() {
     return driver
       .sleep(2000)
-      .waitForElementByName('问大家')
+      .waitForElementByName('首页')
       .click()
       .sleep(3000);
   });
 
-  it('#8 购物车', function() {
+  it('#11 微淘', function() {
     return driver
       .sleep(2000)
-      .waitForElementByName('购物车')
-      .click()
-      .sleep(3000);
-  });
-
-  it('#9 我的淘宝', function() {
-    return driver
-      .sleep(2000)
-      .waitForElementByName('我的淘宝')
+      .waitForElementByName('微淘')
       .click()
       .sleep(3000);
   });
@@ -177,14 +147,71 @@ describe('macaca mobile sample', function() {
       .click()
       .sleep(3000);
   });
-
-  it('#12 问大家', function() {
+  
+  it('#10 首页', function() {
     return driver
       .sleep(2000)
-      .waitForElementByName('问大家')
+      .waitForElementByName('首页')
       .click()
       .sleep(3000);
   });
+
+  it('#11 微淘', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('微淘')
+      .click()
+      .sleep(3000);
+  });
+  
+  it('#10 首页', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('首页')
+      .click()
+      .sleep(3000);
+  });
+
+  it('#11 微淘', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('微淘')
+      .click()
+      .sleep(3000);
+  });
+  
+  it('#10 首页', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('首页')
+      .click()
+      .sleep(3000);
+  });
+
+  it('#11 微淘', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('微淘')
+      .click()
+      .sleep(3000);
+  });
+  
+  it('#10 首页', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('首页')
+      .click()
+      .sleep(3000);
+  });
+
+  it('#11 微淘', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('微淘')
+      .click()
+      .sleep(3000);
+  });
+
 
 
 
