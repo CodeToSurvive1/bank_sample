@@ -14,9 +14,9 @@ var iOSOpts = {
   udid: '9daef85429600e88ea5442ba3d5fee548c02aeac',
   // bundleId: 'xudafeng.ios-app-bootstrap.1'
   bundleId: 'com.bankcomm.maidanba'
-    // bundleId: 'com.csii.csbank'
-    // bundleId: 'com.tencent.mm'
-    // bundleId: 'com.tencent.xin'
+  // bundleId: 'com.csii.csbank'
+  // bundleId: 'com.tencent.mm'
+  // bundleId: 'com.tencent.xin'
 
 
 
@@ -25,12 +25,12 @@ var iOSOpts = {
 
 var androidOpts = {
   platformName: 'Android',
-  package: 'com.bankcomm.maidanba',
+  package: 'com.taobao.taobao',
   reuse: 2,
-  udid: 'DU2MYN146D002912',
-  activity: '.activity.SplashActivity',
+  udid: 'PBV0216706008526',
+  activity: 'com.taobao.tao.welcome.Welcome',
   // activity: 'com.bankcomm.maidanba/.activity.SplashActivity',
-  // app: path.join(__dirname, '..', 'app', `${platform}-app-bootstrap.zip`)
+  // app: path.join(__dirname, '..', 'app', `taobao.apk`)
 };
 
 var wd = require('webdriver-client')(_.merge({}, platform === 'ios' ? iOSOpts :
@@ -90,31 +90,102 @@ describe('macaca mobile sample', function() {
   // });
 
 
-  it('#1 点击生活按钮', function() {
+  it('#1 微淘', function() {
     return driver
       .sleep(2000)
-      .waitForElementByName('生活')
+      .waitForElementByName('微淘')
       .click()
       .sleep(3000);
   });
 
-
-  it('#2 点击商旅出行', function() {
+  it('#2 问大家', function() {
     return driver
-      .elementByName('商旅出行')
+      .sleep(2000)
+      .waitForElementByName('问大家')
       .click()
       .sleep(3000);
   });
 
-
-  it('#3 点击换旅程', function() {
+  it('#3 购物车', function() {
     return driver
-      .webview()
-      .elementByXPath(
-        '//*[@id="layout"]/div[2]/div[3]/ul/li[1]/a')
+      .sleep(2000)
+      .waitForElementByName('购物车')
       .click()
       .sleep(3000);
   });
+
+  it('#4 我的淘宝', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('我的淘宝')
+      .click()
+      .sleep(3000);
+  });
+
+  it('#5 首页', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('首页')
+      .click()
+      .sleep(3000);
+  });
+
+  it('#6 微淘', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('微淘')
+      .click()
+      .sleep(3000);
+  });
+
+  it('#7 问大家', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('问大家')
+      .click()
+      .sleep(3000);
+  });
+
+  it('#8 购物车', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('购物车')
+      .click()
+      .sleep(3000);
+  });
+
+  it('#9 我的淘宝', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('我的淘宝')
+      .click()
+      .sleep(3000);
+  });
+
+  it('#10 首页', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('首页')
+      .click()
+      .sleep(3000);
+  });
+
+  it('#11 微淘', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('微淘')
+      .click()
+      .sleep(3000);
+  });
+
+  it('#12 问大家', function() {
+    return driver
+      .sleep(2000)
+      .waitForElementByName('问大家')
+      .click()
+      .sleep(3000);
+  });
+
 
 
 
