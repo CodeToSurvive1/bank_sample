@@ -94,10 +94,10 @@ describe('macaca mobile sample', function() {
 
   it('#1 点击生活按钮', function() {
     return driver
-      .sleep(2000)
+      .sleep(5000)
       .waitForElementByName('生活')
       .click()
-      .sleep(3000);
+      .sleep(8000);
   });
 
 
@@ -105,7 +105,7 @@ describe('macaca mobile sample', function() {
     return driver
       .elementByName('商旅出行')
       .click()
-      .sleep(3000);
+      .sleep(8000);
   });
 
 
@@ -115,7 +115,7 @@ describe('macaca mobile sample', function() {
       .elementByXPath(
         '//*[@id="layout"]/div[2]/div[3]/ul/li[1]/a')
       .click()
-      .sleep(3000);
+      .sleep(8000);
   });
 
 
