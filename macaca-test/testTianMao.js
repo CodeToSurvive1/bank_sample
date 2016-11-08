@@ -98,14 +98,6 @@ describe('macaca mobile sample', function() {
       .sleep(3000);
   });
 
-  it('#2 购物车', function() {
-    return driver
-      .sleep(2000)
-      .waitForElementByName('购物车')
-      .click()
-      .sleep(3000);
-  });
-
   it('#3 我', function() {
     return driver
       .sleep(2000)
@@ -138,13 +130,6 @@ describe('macaca mobile sample', function() {
       .sleep(3000);
   });
 
-  it('#7 购物车', function() {
-    return driver
-      .sleep(2000)
-      .waitForElementByName('购物车')
-      .click()
-      .sleep(3000);
-  });
 
   it('#8 天猫', function() {
     return driver
