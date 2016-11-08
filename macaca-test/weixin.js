@@ -79,8 +79,6 @@ describe('macaca mobile sample', function() {
         .elementByName('公号推荐')
         .click()
         .sleep(5000)
-        .elementByName('安卓开发精选')
-        .click()
         .sleep(3000);
   });
 
