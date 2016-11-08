@@ -27,7 +27,7 @@ var androidOpts = {
   platformName: 'Android',
   package: 'com.bankcomm.Bankcomm',
   reuse: 2,
-  udid: '2353c4bb',
+  udid: process.env.udid || '2353c4bb',
 //   udid: 'PBV0216706008526',
   
   activity: 'com.bankcomm.config.ConfigActivity',
